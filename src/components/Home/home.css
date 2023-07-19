@@ -1,0 +1,138 @@
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url('../../assets/Home.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-text h1,
+  .hero-text p,
+  .hero-text button {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .hero-text {
+      text-align: center; /* Center align on smaller screens */
+      left: 50%; /* Align to the center horizontally */
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* vertically align items */
+    justify-content: center; /* align items to the center */
+  }
+  
+  .container video {
+    width: 400px; /* adjust the width as needed */
+    margin-left: 20px; /* add margin between the video and text */
+  }
+  
+  .container .text {
+    flex: 1; /* occupy remaining space */
+    padding: 0 20px; /* add padding for spacing */
+  }
+  
+  @media (max-width: 769px) {
+    .container {
+      flex-direction: column; /* stack items vertically on smaller screens */
+      align-items: center; /* center align items */
+    }
+  
+    .container video {
+      max-width: 100%; /* adjust the width as needed */
+      margin: 20px 0; /* add margin between the video and text */
+    }
+    .containerList .listOne{
+        margin-left: 10%;
+    }
+
+    .containerList .listTwo{
+        margin-left: 10%;
+    }
+
+    
+  }
+
+
+  .listOne{
+    flex: 1; /* occupy remaining space */
+    margin-left: 30%;
+    
+  }
+
+
+  .listTwo{
+    flex: 1; /* occupy remaining space */
+    margin-right: 10%;
+  
+  }
+
+  .Music-heading {
+    display: flex;
+    justify-content: center; /* horizontally center the content */
+    align-items: center; /* vertically center the content */
+    height: 10vh; /* set the height of the container to the full viewport height */
+  }
+  
+  .Music-heading h1 {
+    text-align: center; /* center align the text */
+  }
+  
+  @media (max-width: 768px) {
+    .Music-heading {
+      height: auto; /* reset the height for smaller screens */
+      padding: 20px; /* add padding for spacing */
+    }
+  }
+
+
+  .containerList{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
+  .courses-btn {
+    margin-left: 5%;
+  }
+
+
+  .text_Sobre {
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+    background-color: #EAE5E5;
+  }
+
+
+  /* Add the following CSS to your existing styles */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.footer{
+margin-top: auto;
+}
+
+
+
+
