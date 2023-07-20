@@ -21,6 +21,7 @@ const SignUp = () => {
       <Navbar />
       
       <div className="signup-row-1">
+        
                   <label htmlFor="nombre" className="form-label row-1-lab">
                     Nombre
                   </label>
@@ -105,7 +106,7 @@ const SignUp = () => {
       </div>
      
       <button type="button" className="signup-btn btn btn-danger rounded rounded-pill">
-        Explora
+      Registrarse
         </button>
 
       <Footer className="footer"/>
