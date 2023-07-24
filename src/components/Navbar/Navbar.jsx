@@ -43,6 +43,7 @@ function OffcanvasExample() {
                 
                   </NavDropdown>
                   <Nav.Link href="#action2">About Us</Nav.Link>
+                  <Nav.Link href="/Contact">Contact Us</Nav.Link>
                  
                 </Nav>
               </Offcanvas.Body>
