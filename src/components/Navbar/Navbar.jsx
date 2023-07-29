@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -8,14 +9,14 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import logo from "../../assets/logo.png"
 
-function OffcanvasExample() {
+function NavbarMusic() {
   return (
     <>
       {['lg'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
+        <Navbar key={expand} expand={expand} className=" " style={{ backgroundColor: '#252525' }}>
           <Container fluid>
             <Navbar.Brand href="#">
-              <img src={logo} alt="Logo"  /> {/* Replace with your logo path */}
+              <img src={logo} width={170} height={100} alt="Logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -30,21 +31,21 @@ function OffcanvasExample() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Login</Nav.Link>
-                  <Nav.Link href="#action2">Registration</Nav.Link>
-                  <NavDropdown
-                    title="Courses"
-                    id={`offcanvasNavbarDropdown-expand-${expand}`}
-                  >
-                    <NavDropdown.Item href="#action3">Course 1</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">Course 2</NavDropdown.Item>
-                   
-                
-                  </NavDropdown>
-                  <Nav.Link href="#action2">About Us</Nav.Link>
-                  <Nav.Link href="/Contact">Contact Us</Nav.Link>
-                 
+                  <Nav.Link as={Link} to="/" style={{ color: 'white', fontWeight: 'bold' }}>
+                    Home
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/login" style={{ color: 'white', fontWeight: 'bold' }}>
+                    Login
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/signup" style={{ color: 'white', fontWeight: 'bold' }}>
+                    Registration
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/CoursePage" style={{ color: 'white', fontWeight: 'bold' }}>
+                    Courses
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/Contact" style={{ color: 'white', fontWeight: 'bold' }}>
+                    Contact Us
+                  </Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
@@ -55,4 +56,4 @@ function OffcanvasExample() {
   );
 }
 
-export default OffcanvasExample;
+export default NavbarMusic;

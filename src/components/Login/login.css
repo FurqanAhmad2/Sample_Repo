@@ -1,3 +1,8 @@
+.login-page{
+    background-image: url("../../assets/loginasset.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .signin{
 
     display: flex;
@@ -14,8 +19,8 @@
 }
 
 .signin-btn{
-    margin-left: 14%;
-    margin-bottom: 8%;
+    margin-left: 15%;
+    margin-bottom: 15%;
     width: 8%;
 }
 
@@ -28,12 +33,50 @@
     margin-top: 0.5%;
 }
 
+.main-body{
+    display: flex;
+    flex-direction: row;
+    margin: 3%;
+}
  /* Media query for smaller screens */
  @media (max-width: 768px) {
     .signin-btn{
-        margin-left: 30%;
-        width: 50%; /* Adjust the button width for mobile */
-        margin-top: 5%;
+        margin-left: 35%;
+        width: 30%; /* Adjust the button width for mobile */
+        
+
+    }
+    .row-1-lab-singin{
+        display: flex;
+        align-items: center;
+    }
+    .login-input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .signin{
+        display: flex;
+        flex-direction: column;
+    
+
+
+    }
+    .main-login{
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center; /* Center the items vertically in mobile view */
+
+    }
+    .login-page{
+        background-image: url("../../assets/mobileLogin.jpg") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .signin{
+        margin: 10%;
+        margin-top: 12%;
     }
 
  }

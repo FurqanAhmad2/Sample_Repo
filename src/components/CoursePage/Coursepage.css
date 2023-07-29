@@ -1,0 +1,59 @@
+
+
+.heading{
+    margin-left: 2%;
+}
+
+/* Coursepage.css */
+.column-separator {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+  }
+  
+
+  .menu-screen{
+    display: flex;
+    flex-direction: row;
+  }
+  .thumb-list{
+    width: 30%;
+    margin-left: 2%;
+  }
+
+  .video-Player{
+    margin-left: 0%;
+    margin-right: 5%;
+}
+
+.video-slide{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main{
+  padding-bottom: 5%;
+  color: white;
+}
+
+
+  
+  @media (max-width: 768px) {
+    .menu-screen{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    
+      .video-Player{
+        margin-left: 0%;
+  }
+  .thumb-list{
+    width: 100%;
+  }
+
+ 
+    
+  
+  }
